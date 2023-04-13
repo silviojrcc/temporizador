@@ -18,7 +18,43 @@
         </div>
     </header>
     <main class="p-5 bg-dark d-flex justify-content-center align-items-center">
-        
+        <section class="temporizador">
+            <div class="container text-light text-center m-4">
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                      <div class="col-sm-6 col-xl-4">
+                        <label for="horas" class="form-label">Horas</label>
+                        <input type="text" class="form-control" id="horas" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6 col-xl-4">
+                        <label for="minutos" class="form-label">Minutos</label>
+                        <input type="text" class="form-control" id="minutos" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xl-4">
+                        <label for="segundos" class="form-label">Segundos</label>
+                        <input type="text" class="form-control" id="segundos" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+                    </div>
+                    <p class="display display-1 p-2 p-md-5">00:00:00</p>
+                    <button class="btn btn-outline-success iniciar">Iniciar</button>
+                </form>
+                <div class="botones">
+                  <button class="pausar d-none btn btn-outline-secondary">Pausar</button>
+                  <button class="resetear d-none btn btn-outline-danger">Reiniciar</button>
+                </div>
+              </div>
+        </section>
     </main>
     <footer class="text-center p-4 bg-black">
         <h3>Este es un ejercicio de práctica de DOM perteneciente al trabajo número 5 del módulo 2 de <a href="https://rollingcodeschool.com/">Rolling code school</a>.</h3>
