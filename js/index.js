@@ -3,6 +3,7 @@
     const display = document.querySelector(".display");
     const pausarBtn = document.querySelector('.pausar');
     const resetearBtn = document.querySelector('.resetear');
+    const iniciarBtn = document.querySelector(".iniciar");
     
     function cuentaRegresiva(minutos,segundos){    
         let tiempoTotal = (minutos * 60) + segundos;
@@ -40,12 +41,12 @@
         formulario.classList.remove("d-none");
     }
 
-
     formulario.addEventListener("submit", (e) =>{
         e.preventDefault();
         const minutos = parseInt(formulario.minutos.value) || 0;
         const segundos = parseInt(formulario.segundos.value) || 0;
         formulario.classList.add("d-none");
+        iniciarBtn.classList.add("d-none");
         pausarBtn.classList.remove("d-none");
         resetearBtn.classList.remove("d-none");
         cuentaRegresiva(minutos,segundos);

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.display {
+    font-family: 'VT323', monospace;
+    background-color: rgba(0, 0, 255, 0.313);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+.btn {
+    font-size: 2em;
+    margin: 20px;
+}
